@@ -4,6 +4,8 @@ import Hero from '../../components/Hero';
 import Expertise from '../../components/Expertise';
 import Capital from '../../components/Capital';
 import Work from '../../components/Work';
+import Join from '../../components/Join';
+import Footer from '../../components/Footer/Footer';
 
 const Main = () => {
     return (
@@ -13,6 +15,8 @@ const Main = () => {
             <Expertise />
             <Capital />
             <Work />
+            <Join />
+            <Footer />
         </>
     );
 };

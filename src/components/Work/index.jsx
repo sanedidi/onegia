@@ -10,9 +10,7 @@ const Work = () => {
             <div className="container">
                 <div className={s.work__wrapper}>
                     <div className={s.work__title}>
-                        <h2>How</h2>
-                        <img src={logo} alt="" />
-                        <h2>works</h2>
+                        <h2>How<img src={logo} alt="" />works</h2>
                     </div>
                     <div className={s.work__cards}>
                         {workCard.map((el) => {
