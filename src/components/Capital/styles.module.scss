@@ -1,0 +1,31 @@
+.cap {
+    margin: 100px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 100px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        width: 100%;
+        max-width: 300px;
+
+        h2 {
+            font-family: DM Sans 36pt;
+            font-size: 42px;
+            font-weight: 400;
+        }
+
+        p {
+            font-family: DM Sans;
+            font-size: 25px;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+    }
+}
