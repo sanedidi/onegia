@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Expertise from '../../components/Expertise';
 import Capital from '../../components/Capital';
+import Work from '../../components/Work';
 
 const Main = () => {
     return (
@@ -11,6 +12,7 @@ const Main = () => {
             <Hero />
             <Expertise />
             <Capital />
+            <Work />
         </>
     );
 };

@@ -14,9 +14,13 @@ const Capital = () => {
                         {cards.map((el) => {
                             return (
                                 <div key={el.id} className={s.cap__card}>
-                                    <img src={el.img} alt="" />
-                                    <h2>{el.title}</h2>
-                                    <p>{el.text}</p>
+                                    <div className={s.cap__card_img}>
+                                        <img src={el.img} alt="" />
+                                    </div>
+                                    <div className={s.cap__card_text}>
+                                        <h2>{el.title}</h2>
+                                        <p>{el.text}</p>
+                                    </div>
                                 </div>
                             );
                         })}

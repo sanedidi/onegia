@@ -1,0 +1,16 @@
+.work {
+    background-color: #F6FAFC;
+    padding: clamp(1.875rem, 0.489rem + 6.93vw, 6.25rem) 0;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h2 {
+            font-family: DM Sans 36pt;
+            font-size: 42px;
+            font-weight: 400;
+        }
+    }
+}

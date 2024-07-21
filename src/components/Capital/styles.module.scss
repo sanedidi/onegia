@@ -1,10 +1,14 @@
 .cap {
-    margin: 100px 0;
+    margin: clamp(1.875rem, 0.489rem + 6.93vw, 6.25rem) 0;
 
     &__wrapper {
         display: grid;
-        grid-template-columns: 1fr 3fr;
-        gap: 100px;
+        grid-template-columns: 1fr 2fr;
+        gap: clamp(3.125rem, 2.531rem + 2.97vw, 5rem);
+
+        @media (max-width:786px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__left {
@@ -13,12 +17,18 @@
         align-items: start;
         gap: 20px;
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
+
+        @media (max-width:786px) {
+            max-width: none;
+            align-items: center;
+            text-align: center;
+        }
 
         h2 {
             font-family: DM Sans 36pt;
             font-size: 42px;
-            font-weight: 400;
+            font-weight: 300;
         }
 
         p {
@@ -26,6 +36,69 @@
             font-size: 25px;
             font-weight: 200;
             text-transform: uppercase;
+        }
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 10px;
+
+        @media (max-width:600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        width: 100%;
+        max-width: 340px;
+        height: max-content;
+
+        @media (max-width:600px) {
+            max-width: none;
+            align-items: center;
+        }
+    }
+
+    &__card_img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100px;
+
+        @media (max-width:600px) {
+            align-items: center;
+        }
+    }
+
+    &__card_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media (max-width:600px) {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-family: DM Serif Display;
+            font-size: 27px;
+            font-weight: 400;
+        }
+
+        p {
+            font-family: DM Serif Display;
+            font-size: 16px;
+            font-weight: 400;
         }
     }
 }
