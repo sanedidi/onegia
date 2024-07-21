@@ -9,14 +9,16 @@ const Work = () => {
                 <div className={s.work__wrapper}>
                     <div className={s.work__title}>
                         <h2>How</h2>
-                        <img src={logo} alt="" />
+                        {/* <img src={logo} alt="" /> */}
                         <h2>works</h2>
                     </div>
                     <div className={s.word__cards}>
                         {workCard.map((el) => {
                             return (
                                 <div key={el.id} className={s.work__card}>
-                                    
+                                    <div className={s.work__card_title}>
+                                        <h2>{el.id}</h2>
+                                    </div>
                                 </div>
                             )
                         })}
