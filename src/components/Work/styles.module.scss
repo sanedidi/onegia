@@ -2,6 +2,13 @@
     background-color: #F6FAFC;
     padding: clamp(1.875rem, 0.489rem + 6.93vw, 6.25rem) 0;
 
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 60px;
+    }
+
     &__title {
         display: flex;
         align-items: center;
@@ -12,5 +19,112 @@
             font-size: 42px;
             font-weight: 400;
         }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+
+        @media (max-width:786px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+        height: max-content;
+    }
+
+    &__card_num {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h2 {
+            font-family: DM Mono;
+            font-size: 38px;
+            font-weight: 400;
+            color: #094A5E;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin-top: auto;
+    }
+
+    &__card_title {
+        font-family: DM Sans 18pt;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 28.6px;
+        text-align: left;
+        height: 90px;
+
+    }
+
+    &__card_text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__line {
+        width: clamp(3.75rem, 0.978rem + 13.86vw, 12.5rem);
+        height: 2px;
+        background-color: #5ABDEB80;
+    }
+
+    &__arrow_right {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #5ABDEB80;
+    }
+
+    .noLine {
+        display: none;
+    }
+
+    &__button {
+        font-weight: 500;
+        color: #580F43;
+        border: 2px solid #580F43;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #fff;
+        width: max-content;
     }
 }
