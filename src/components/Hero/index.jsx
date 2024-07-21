@@ -7,8 +7,9 @@ const Hero = () => {
             <div className="container">
                 <div className={s.hero__wrapper}>
                     <div className={s.hero__content}>
+                        <div className={s.hero__border}></div>
                         <h2 className={s.hero__title}>
-                            Unlock your engineering potential.
+                            Unlock your <br /> engineering potential.
                         </h2>
                         <p className={s.hero__text}>
                             Join our expert network and work with leading manufacturing and
@@ -18,7 +19,7 @@ const Hero = () => {
                         <button>
                             Join Now
                         </button>
-                    <img className={s.hero__img} src={absImg} alt="" />
+                        <img className={s.hero__img} src={absImg} alt="" />
                     </div>
                 </div>
             </div>
