@@ -32,7 +32,7 @@ const Header = () => {
                     <div className={clsx(s.header__links, s.right)}>
                         {lastTwoLinks.map((el) => {
                             return (
-                                <Link className={el.name === "Join Now" ? `${clsx(s.header__link, s.join)}` : s.header__link} key={el.id} to={el.path}>
+                                <Link className={el.name === "Join Now" ? `${clsx(s.header__link, s.join)}` : s.header__link} key={el.id} href={el.path}>
                                     {el.name}
                                 </Link>
                             );
