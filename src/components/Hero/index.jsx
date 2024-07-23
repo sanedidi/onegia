@@ -16,7 +16,7 @@ const Hero = () => {
                             industrial companies on diverse engineering projects, in short
                             side-gigs or longer term engagements.
                         </p>
-                        <button>
+                        <button onClick={() => window.open('https://ongenia-react-frontend.vercel.app/')}>
                             Join Now
                         </button>
                         <img className={s.hero__img} src={absImg} alt="" />
