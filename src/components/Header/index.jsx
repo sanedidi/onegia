@@ -14,7 +14,7 @@ const Header = () => {
         <div className={s.header}>
             <div className="container">
                 <div className={s.header__wrapper}>
-                    <div className={clsx(s.header__links, s.left)}>
+{/*                     <div className={clsx(s.header__links, s.left)}>
                         {firstTwoLinks.map((el) => {
                             return (
                                 <Link className={s.header__link} key={el.id} to={el.path}>
@@ -22,7 +22,7 @@ const Header = () => {
                                 </Link>
                             );
                         })}
-                    </div>
+                    </div> */}
                     <div className={s.burger}>
                         <BiMenu fontSize={"25px"} />
                     </div>
