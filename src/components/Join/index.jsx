@@ -11,7 +11,7 @@ const Join = () => {
                         <h2 className={s.join__title}>
                             Join the expert <br /> engineer network.
                         </h2>
-                        <button>
+                        <button onClick={() => window.open('https://ongenia-react-frontend.vercel.app/')}>
                             Start Now
                         </button>
                         <div className={s.join__buttons}>
