@@ -36,7 +36,7 @@ const Work = () => {
                                 </div>
                             )
                         })}
-                        <button className={s.work__button}>Start now</button>
+                        <button onClick={() => window.open('https://ongenia-react-frontend.vercel.app/')} className={s.work__button}>Start now</button>
                     </div>
                 </div>
             </div>
