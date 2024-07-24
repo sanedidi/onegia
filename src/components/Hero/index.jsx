@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./styles.module.scss";
 import absImg from '../../assets/img/hero-abs.png'
+import { Abs } from "../../assets/svg/svg";
 const Hero = () => {
     return (
         <div className={s.hero}>
@@ -19,7 +20,9 @@ const Hero = () => {
                         <button onClick={() => window.open('https://ongenia-react-frontend.vercel.app/')}>
                             Join Now
                         </button>
-                        <img className={s.hero__img} src={absImg} alt="" />
+                        <div className={s.hero__img}>
+                            <Abs />
+                        </div>
                     </div>
                 </div>
             </div>
